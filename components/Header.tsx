@@ -1,10 +1,16 @@
 "use client";
-import React from 'react'
+import React, {useState} from 'react'
 import {motion} from "framer-motion";
 import Link from "next/link";
 import {links} from "@/lib/data";
+import { clsx } from 'clsx';
+import {useActiveSectionContext} from "@/context/active-section-context";
 
 const Header = () => {
+   // const [active,setActive] =useState("Home"
+
+
+    const{activeSection,setActiveSection,setTimeOfLastClick}=useActiveSectionContext()
   return (
     <header className='z-[990] relative'>
         <motion.div className='fixed top-0 left-1/2  h-[4.5rem] w-full rounded-none border border-white border-opacity-40
@@ -19,11 +25,32 @@ const Header = () => {
             <ul className='flex w-[22rem] flex-wrap items-center justify-center gap-y-1 text-[0.9rem] font-medium text-gray-500
             sm:w-[initial] sm:flex-nowrap sm:gap-5'>
                 {links?.map((link)=> (
-                    <motion.li className="h-3/4 items-center justify-center" key={link.hash}
+                    <motion.li className="h-3/4 items-center justify-center relative" key={link.hash}
                                initial={{y:-100, opacity:0}}
                                animate={{y:0,opacity:1}}
                     >
-                        <Link className="transition flex w-full items-center justify-center px-3 py-3 hover:text-gray-950" href={link.hash}>{link?.name}</Link>
+                        <Link onClick={()=>{
+                            setActiveSection(link?.name);
+                            setTimeOfLastClick(Date.now())
+                        }}
+                        className={clsx("transition flex w-full" +
+                            " items-center" +
+                            " justify-center" +
+                            " px-3" +
+                            " py-3" +
+                            " hover:text-gray-950",{"text-gray-950":activeSection
+                        ===link?.name})} href={link.hash}>{link?.name}
+                            {activeSection === link?.name &&
+                                <motion.span layoutId="active"
+                                             transition={{
+                                                 type:'spring',
+                                                 stiffness:380,
+                                                 damping:30
+                                             }}
+                                             className="bg-gray-100 rounded-full absolute -z-10 inset-0 m-1">
+
+                        </motion.span>}
+                        </Link>
                     </motion.li>
                 ))}
 

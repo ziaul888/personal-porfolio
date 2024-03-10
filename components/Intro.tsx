@@ -1,15 +1,19 @@
 'use client';
-import React from 'react';
+import React, {useEffect} from 'react';
 import Image from "next/image"
 import myImage from "../public/zia-ul-Hoque-bhuiyan.jpg"
 import {motion} from "framer-motion"
 import Link from 'next/link';
 import {BsArrowRight, BsGithub, BsLinkedin} from "react-icons/bs"
 import { LuHardDriveDownload } from 'react-icons/lu';
+import {useActiveSectionContext} from "@/context/active-section-context";
+import {useInView} from "react-intersection-observer";
+import useSectionView from "@/lib/custom_hook/useSectionInView";
 
 const Intro = () => {
+    const {ref}=useSectionView("Home",0.50)
     return (
-        <section className='mb-28 max-w-[50rem] text-center sm:mb-0'>
+        <section ref={ref} className='mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]' id="home">
             <div className="flex items-center justify-center">
                 <div className="relative">
                     <motion.div
