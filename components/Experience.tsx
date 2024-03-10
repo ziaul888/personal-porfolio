@@ -14,7 +14,7 @@ const Experience = () => {
     const { ref } = useSectionView("Experience", 0.75);
 
     return (
-        <section id="experience" ref={ref} className="scroll-mt-28">
+            <section id="experience" ref={ref} className="scroll-mt-28 mb-28 sm:mb-40">
             <SectionHeader>
                 Experiences
             </SectionHeader>
