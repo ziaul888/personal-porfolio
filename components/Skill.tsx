@@ -35,7 +35,7 @@ const Skill = () => {
                                    once: true
                                }}
                                custom={index}
-                               key={index} className="bg-white border border-black/[0.1] rounded-xl py-3 px-5">{skills}</motion.li>
+                               key={index} className="bg-white border border-black/[0.1] rounded-xl py-3 px-5 dark:bg-white/10 dark:text-white/80">{skills}</motion.li>
                 ))}
             </ul>
         </section>

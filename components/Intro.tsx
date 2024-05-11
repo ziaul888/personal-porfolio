@@ -71,18 +71,18 @@ const Intro = () => {
                 </Link>
                 <a className='group bg-white px-7 py-5 flex items-center gap-2 rounded-full
                 outline-none focus:scale-110 hover:scale-110  active:scale-105 transition
-                cursor-pointer border border-black/10' href='/CV.pdf' download>Download CV 
+                cursor-pointer border border-black/10 dark:bg-white/10 dark:text-white/60' href='/CV.pdf' download>Download CV
                     {/*<LuHardDriveDownload className='opacity-60 group-hover:translate-y-1 transition'/>*/}
                 </a>
                 <a className='bg-white text-gray-700 p-4 flex items-center gap-2 rounded-full
                 focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950  active:scale-105 transition
-                cursor-pointer border border-black/10
+                cursor-pointer border border-black/10 dark:bg-white/10 dark:text-white/60
                 ' href='https://www.linkedin.com' target='_blank'>
                     <BsLinkedin/>
                 </a>
                 <a className='bg-white text-gray-700 p-4 flex items-center gap-2 rounded-full
                  focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition
-                cursor-pointer border border-black/10' href='https://github.com/ziaul888' target='_blank'>
+                cursor-pointer border border-black/10 dark:bg-white/10 dark:text-white/60' href='https://github.com/ziaul888' target='_blank'>
                     <BsGithub/>
                 </a>
             </motion.div>
