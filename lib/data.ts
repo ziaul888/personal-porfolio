@@ -44,9 +44,9 @@ export const experiencesData = [
     },
     {
         title: "Front-End Developer(React)",
-        location: "Biddasoft and codixl ",
+        location: "Biddasoft and codixel",
         description:
-            "I worked as a front-end developer for 1 year month biddasoft and codixl",
+            "I worked as a front-end developer for 1 year month biddasoft and codixel",
         icon: React.createElement(CgWorkAlt),
         date: "2021 - 2022",
     },
