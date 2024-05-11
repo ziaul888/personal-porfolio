@@ -35,28 +35,31 @@ export const links = [
 
 export const experiencesData = [
     {
-        title: "Graduated bootcamp",
-        location: "Miami, FL",
+        title: "NOC support",
+        location: "IBBS, kawron bazar, dhaka",
         description:
-            "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+            " I worked 1 and half year as network support engineer",
         icon: React.createElement(LuGraduationCap),
-        date: "2019",
+        date: "2020-2021",
     },
     {
-        title: "Front-End Developer",
-        location: "Orlando, FL",
+        title: "Front-End Developer(React)",
+        location: "Biddasoft and codixl ",
         description:
-            "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+            "I worked as a front-end developer for 1 year month biddasoft and codixl",
         icon: React.createElement(CgWorkAlt),
-        date: "2019 - 2021",
+        date: "2021 - 2022",
     },
     {
-        title: "Full-Stack Developer",
-        location: "Houston, TX",
+        title: "Front-End Developer(React)",
+        location: "6amtech mirpur 12",
         description:
-            "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+            "Now i am working on 6amtech as full time react developer. My stack includes React, Next.js, TypeScript," +
+            " MUI. I'm" +
+            " open to" +
+            " new full-time opportunities.",
         icon: React.createElement(FaReact),
-        date: "2021 - present",
+        date: "2022- present",
     },
 ] as const;
 
@@ -64,26 +67,25 @@ export const projectsData = [
     {
         title: "StackFood",
         description:
-            "I worked as a front end developer on this food delivery project for 2 years. Users can give public" +
-            " feedback to" +
-            " companies.",
-        tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
+            "I worked as a front end developer on this food delivery project for 2 years. This project is an online food delivery system from where users can order food",
+        tags: ["React", "Next.js", "Redux", "MUI", "React Query"],
         imageUrl: corpcommentImg,
     },
     {
-        title: "rmtDev",
+        title: "6amMart",
         description:
-            "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-        tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
+            "I worked as a front end developer on this food delivery project for 2 years.Multi module online" +
+            " ecommerce system",
+        tags: ["React", "Next.js", "Redux", "MUI", "React Query"],
         imageUrl: rmtdevImg,
     },
-    {
-        title: "Word Analytics",
-        description:
-            "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-        tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-        imageUrl: wordanalyticsImg,
-    },
+    // {
+    //     title: "Word Analytics",
+    //     description:
+    //         "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
+    //     tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+    //     imageUrl: wordanalyticsImg,
+    // },
 ] as const;
 
 export const skillsData = [
@@ -93,17 +95,10 @@ export const skillsData = [
     "TypeScript",
     "React",
     "Next.js",
-    "Node.js",
     "Git",
     "Tailwind",
-    "Prisma",
-    "MongoDB",
     "Redux",
     "GraphQL",
-    "Apollo",
-    "Express",
-    "PostgreSQL",
-    "Python",
-    "Django",
     "Framer Motion",
+    "React Query"
 ] as const;
