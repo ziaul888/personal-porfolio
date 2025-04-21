@@ -35,48 +35,45 @@ export const links = [
 
 export const experiencesData = [
     {
-        title: "NOC support",
-        location: "IBBS, kawron bazar, dhaka",
-        description:
-            " I worked 1 and half year as network support engineer",
-        icon: React.createElement(LuGraduationCap),
-        date: "2020-2021",
+      title: "NOC Support Engineer",
+      location: "IBBS, Kawran Bazar, Dhaka",
+      description:
+        "Worked for 1.5 years as a Network Support Engineer, responsible for monitoring and maintaining network infrastructure, resolving connectivity issues, and ensuring optimal system performance.",
+      icon: React.createElement(LuGraduationCap),
+      date: "2020 - 2021",
     },
     {
-        title: "Front-End Developer(React)",
-        location: "Biddasoft and codixel",
-        description:
-            "I worked as a front-end developer for 1 year month biddasoft and codixel",
-        icon: React.createElement(CgWorkAlt),
-        date: "2021 - 2022",
+      title: "Front-End Developer (React)",
+      location: "Biddasoft & Codixel",
+      description:
+        "Worked as a Front-End Developer for 1 year at Biddasoft and Codixel. Built and maintained web applications using React, with a focus on responsive UI, performance, and user experience.",
+      icon: React.createElement(CgWorkAlt),
+      date: "2021 - 2022",
     },
     {
-        title: "Front-End Developer(React)",
-        location: "6amtech mirpur 12",
-        description:
-            "Now i am working on 6amtech as full time react developer. My stack includes React, Next.js, TypeScript," +
-            " MUI. I'm" +
-            " open to" +
-            " new full-time opportunities.",
-        icon: React.createElement(FaReact),
-        date: "2022- present",
+      title: "Front-End Developer (React)",
+      location: "6amTech, Mirpur 12",
+      description:
+        "Currently working as a full-time React Developer at 6amTech. My tech stack includes React, Next.js, TypeScript, and Material-UI. I'm passionate about clean, scalable code and open to new full-time opportunities.",
+      icon: React.createElement(FaReact),
+      date: "2022 - Present",
     },
-] as const;
+  ] as const;
+  
 
 export const projectsData = [
     {
         title: "StackFood",
         description:
-            "I worked as a front end developer on this food delivery project for 2 years. This project is an online food delivery system from where users can order food",
-        tags: ["React", "Next.js", "Redux", "MUI", "React Query"],
+            "I worked as a Front-End Developer on this food delivery project for two years. The platform is an online food ordering system that allows users to browse restaurants, explore menus, and place food orders for delivery or pickup.",
+        tags: ["React", "Next.js", "Redux", "MUI", "React Query","Firebase","Google Map"],
         imageUrl: corpcommentImg,
     },
     {
         title: "6amMart",
         description:
-            "I worked as a front end developer on this food delivery project for 2 years.Multi module online" +
-            " ecommerce system",
-        tags: ["React", "Next.js", "Redux", "MUI", "React Query"],
+       " I worked as a Front-End Developer on this food delivery project for two years. It is a multi-module online platform that includes food delivery, e-commerce, rental, and parcel services—providing users with a seamless experience across various on-demand services.",
+        tags: ["React", "Next.js", "Redux", "MUI", "React Query,'Firebase","Google map"],
         imageUrl: rmtdevImg,
     },
     // {
@@ -97,6 +94,7 @@ export const skillsData = [
     "Next.js",
     "Git",
     "Tailwind",
+    "MUI",
     "Redux",
     "GraphQL",
     "Framer Motion",
